@@ -3,11 +3,7 @@ package resources;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringReader;
 import java.net.URL;
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
 
 
 /**
@@ -115,10 +111,6 @@ public class URLResource {
      *         at a time
      * @throws exception if this web page does not represent a CSV formatted data
      */
-    public CSVParser getCSVParser () {
-        return getCSVParser(true);
-    }
-
     /**
      * Returns a <code>CSVParser</code> object to access the contents of an open web page, possibly
      * without a header row.
@@ -131,9 +123,6 @@ public class URLResource {
      *         at a time
      * @throws exception if this web page does not represent a CSV formatted data
      */
-    public CSVParser getCSVParser (boolean withHeader) {
-        return getCSVParser(withHeader, ",");
-    }
 
     /**
      * Returns a <code>CSVParser</code> object to access the contents of an open web page, possibly
@@ -150,36 +139,6 @@ public class URLResource {
      * @throws exception if this web page does not represent a CSV formatted data
      * @throws exception if <code>delimiter.length() != 1</code>
      */
-    public CSVParser getCSVParser (boolean withHeader, String delimiter) {
-        if (delimiter == null || delimiter.length() != 1) {
-            throw new ResourceException("URLResource: CSV delimiter must be a single character: " + delimiter);
-        }
-        try {
-            char delim = delimiter.charAt(0);
-            Reader input = new StringReader(mySource);
-            if (withHeader) {
-                return new CSVParser(input, CSVFormat.EXCEL.withHeader().withDelimiter(delim));
-            }
-            else {
-                return new CSVParser(input, CSVFormat.EXCEL.withDelimiter(delim));
-            }
-        }
-        catch (Exception e) {
-            throw new ResourceException("URLResource: cannot read " + myPath + " as a CSV file.");
-        }
-    }
-
-    /**
-     * Allows access to the column names of the header row of a CSV file (the first line in the
-     * file) one at a time. If the CSV file did not have a header row, then an empty
-     * <code>Iterator</code> is returned.
-     * 
-     * @param parser the <code>CSVParser</code> that has been created for this web page
-     * @return an <code>Iterable</code> that allows access one header name at a time
-     */
-    public Iterable<String> getCSVHeaders (CSVParser parser) {
-        return parser.getHeaderMap().keySet();
-    }
 
     // store data (keep in sync with URLResource)
     private String initFromStream (InputStream stream) {
