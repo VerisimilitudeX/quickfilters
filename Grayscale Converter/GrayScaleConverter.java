@@ -38,5 +38,8 @@ public class GrayScaleConverter {
 			gray.setFileName(filename.substring(0, filename.indexOf(".")) + "-gray.jpg");
 			gray.save();
 		}
+		// blank line
+		System.out.println("");
+		System.out.println("CONVERSION COMPLETE: The grayscale images are saved in the same directory as the original images, with a -gray suffix.");
 	}
 }
