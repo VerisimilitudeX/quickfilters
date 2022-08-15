@@ -15,3 +15,5 @@ The following algorithms are currently supported:
 - ITU-R BT.709
 - ITU-R BT.601
 - Custom Color Value
+
+## Benefits of Converting to Grayscale
