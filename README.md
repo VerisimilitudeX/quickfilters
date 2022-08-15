@@ -3,6 +3,9 @@
 ## Color to Grayscale Converter
 Simply select your images, and they will be batch converted to grayscale instantly, with no loss of image resolution.
 
+<details>
+  <summary>More Information</summary>
+
 ### Unique Features
 If you only need to convert one image to grayscale, using image editing application that you are already familiar with may be the simplest option. You'd open the image to be converted and then use the application to create a grayscale copy of it. But what if you need to grayscale a large number of images? Opening each image, converting it to grayscale, and then saving it can be time-consuming and tedious. For a few images, this may not be a big deal. But what if you have 1,000 images to work with? To do this by hand would take days, if you could even force yourself to do this repetitive task over and over. This is where this software (Color to Grayscale Converter) comes in.
 
@@ -32,3 +35,4 @@ You might want to experiment with printing images in grayscale. Grayscale printi
 
 ### Installation Instructions
 To use this software, you first need to install the `GrayScaleConverter.java` file. There, you can remove the comment from the conversion algorithm you wish to use (or use the default ITU-R BT.709 algorithm). Then, you can select your image(s) and click the `Open` button from the DirectoryResource popup. The software will automatically convert the image to grayscale and save it to the same directory as the original image.
+</details>
