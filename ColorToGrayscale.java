@@ -66,9 +66,6 @@ public class ColorToGrayscale {
 				p.setBlue(avg);
 				sc.close();
 			}
-			else {
-				System.out.println("UNKOWN ERROR");
-			}
 		}
 		return grayImage;
 	}
