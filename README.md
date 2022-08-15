@@ -3,13 +3,13 @@
 ## Color to Grayscale Converter
 Simply select your images, and they will be batch converted to grayscale instantly, with no loss of image resolution.
 
+![Color to Grayscale Diagram](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)
+
 <details>
   <summary><h3>More Information</h3></summary>
 
 ### Unique Features
 If you only need to convert one image to grayscale, using image editing application that you are already familiar with may be the simplest option. You'd open the image to be converted and then use the application to create a grayscale copy of it. But what if you need to grayscale a large number of images? Opening each image, converting it to grayscale, and then saving it can be time-consuming and tedious. For a few images, this may not be a big deal. But what if you have 1,000 images to work with? To do this by hand would take days, if you could even force yourself to do this repetitive task over and over. This is where this software (Color to Grayscale Converter) comes in.
-
-![Color to Grayscale Diagram](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)
 
 ### Usage 
 This software turns color photos into grayscale ones. Only gray color information is left in the output image after it removes all color channel information. You only see a black and white image as a result. There are several methods for removing color from an image, so you can select the conversion algorithm or enter your own constant weights to specify how much grayscale to extract from each color channel.
