@@ -22,6 +22,7 @@ The following algorithms are currently supported:
 - Mean Color Value
 - ITU-R BT.709
 - ITU-R BT.601
+- ITU-R BT.2020
 - Custom Color Value
 
 ### Benefits of Grayscale
