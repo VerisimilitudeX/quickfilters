@@ -111,6 +111,7 @@ public class URLResource {
      *         at a time
      * @throws exception if this web page does not represent a CSV formatted data
      */
+
     /**
      * Returns a <code>CSVParser</code> object to access the contents of an open web page, possibly
      * without a header row.
@@ -138,6 +139,15 @@ public class URLResource {
      *         at a time
      * @throws exception if this web page does not represent a CSV formatted data
      * @throws exception if <code>delimiter.length() != 1</code>
+     */
+    
+    /**
+     * Allows access to the column names of the header row of a CSV file (the first line in the
+     * file) one at a time. If the CSV file did not have a header row, then an empty
+     * <code>Iterator</code> is returned.
+     * 
+     * @param parser the <code>CSVParser</code> that has been created for this web page
+     * @return an <code>Iterable</code> that allows access one header name at a time
      */
 
     // store data (keep in sync with URLResource)

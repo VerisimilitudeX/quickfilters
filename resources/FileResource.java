@@ -197,7 +197,7 @@ public class FileResource {
      *         time
      * @throws exception if this file does not represent a CSV formatted data
      */
-  
+
     /**
      * Returns a <code>CSVParser</code> object to access the contents of an open file, possibly
      * without a header row.
@@ -210,7 +210,6 @@ public class FileResource {
      *         time
      * @throws exception if this file does not represent a CSV formatted data
      */
-
 
     /**
      * Returns a <code>CSVParser</code> object to access the contents of an open file, possibly
@@ -227,7 +226,7 @@ public class FileResource {
      * @throws exception if this file does not represent a CSV formatted data
      * @throws exception if <code>delimiter.length() != 1</code>
      */
-
+    
     /**
      * Allows access to the column names of the header row of a CSV file (the first line in the
      * file) one at a time. If the CSV file did not have a header row, then an empty
@@ -236,6 +235,7 @@ public class FileResource {
      * @param parser the <code>CSVParser</code> that has been created for this file
      * @return an <code>Iterable</code> that allows access one header name at a time
      */
+
 
     /**
      * Writes a string to the end of this file.
