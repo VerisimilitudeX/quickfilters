@@ -1,31 +1,31 @@
-/**
- * Create a gray scale version of an image by setting all color components of each pixel to the same value.
- * 
- * @author Duke Software Team 
- */
 import resources.*;
 import java.io.*;
 
 public class GrayScaleConverter {
-	//I started with the image I wanted (inImage)
 	public static ImageResource makeGray(ImageResource colorImage) {
-		//I made a blank image of the same size
 		ImageResource grayImage = new ImageResource(colorImage);
-		//for each pixel in outImage
 		for (Pixel p : grayImage.pixels()) {
-			//look at the corresponding pixel in inImage
 			Pixel corrPixel = colorImage.getPixel(p.getX(), p.getY());
-			//compute inPixel's red + inPixel's blue + inPixel's green
-			//divide that sum by 3 (call it average)
-			int avg = (corrPixel.getRed() + corrPixel.getGreen() + corrPixel.getGreen()) / 3;
-			//set pixel's red to average
-			p.setRed(avg);
-			//set pixel's green to average
-			p.setGreen(avg);
-			//set pixel's blue to average
-			p.setBlue(avg);
+			
+			/* -------------------------------------------------
+			 * Algorithms to convert color to grayscale
+			 * Remove the comment for the algorithm you want to use (and comment out the others)
+			 * The default is to use the ITU-R BT.709 algorithm
+			 * -------------------------------------------------
+			*/
+
+				// ***Average Color Values***
+			// int newRGB = (corrPixel.getRed() + corrPixel.getGreen() + corrPixel.getGreen()) / 3;
+				// ***ITU-R BT.709 Formula***
+			int newRGB = (int) ((0.2126 * corrPixel.getRed()) + (0.7152 * corrPixel.getGreen()) + (0.0722 * corrPixel.getBlue()));
+				// ***ITU-R BT.601 Formula***
+			// int newRGB = (int) ((0.299 * corrPixel.getRed()) + (0.587 * corrPixel.getGreen()) + (0.114 * corrPixel.getBlue()));
+				// ***Custom Formula***
+			// int newRGB = (int) ((/* Red weight * */ corrPixel.getRed()) + (/* Green weight * */ corrPixel.getGreen()) + (/* Blue weight * */ corrPixel.getBlue()));
+			p.setRed(newRGB);
+			p.setGreen(newRGB);
+			p.setBlue(newRGB);
 		}
-		//outImage is your answer
 		return grayImage;
 	}
 
@@ -35,7 +35,6 @@ public class GrayScaleConverter {
 			ImageResource inImage = new ImageResource(f);
 			ImageResource gray = makeGray(inImage);
 			String filename = gray.getFileName();
-			// set the new name to the filename's substring without the file extension
 			gray.setFileName(filename.substring(0, filename.indexOf(".")) + "-gray.jpg");
 			gray.save();
 		}
