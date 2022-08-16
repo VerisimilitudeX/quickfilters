@@ -17,6 +17,9 @@ public class InvertedToColor {
     }
     
     public static void main(String[] args) {
+        
+
+        
         DirectoryResource dr = new DirectoryResource();
         for (File f : dr.selectedFiles()) {
             ImageResource colorImage = new ImageResource(f);
