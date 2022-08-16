@@ -1,4 +1,5 @@
-# Image Conversion Tools
+# Batch Image Conversion Tools
+If you only need to convert one image, using an image editing application that you are already familiar with may be the simplest option. You'd open the image to be converted and then use the application to create a copy of it. But what if you need to convert a large number of images? Opening each image, converting it, and then saving it can be highly time-consuming and tedious. For a few images, this may not be a big deal. But what if you have 1,000 images to work with? To do this by hand would take days, if you could even force yourself to do this repetitive task over and over. This is where these image conversion tools comes in.
 
 ## Color to Grayscale Converter
 Simply select your images, and they will be batch converted to grayscale instantly, with no loss of image resolution.
@@ -49,9 +50,6 @@ The following reverse algorithms are currently supported:
 Color images enhance the contrast of the image. They also allow for even more complex image processing than grayscale images.
 
 </details>
-
-## Unique Features
-If you only need to convert one image, using an image editing application that you are already familiar with may be the simplest option. You'd open the image to be converted and then use the application to create a copy of it. But what if you need to convert a large number of images? Opening each image, converting it, and then saving it can be highly time-consuming and tedious. For a few images, this may not be a big deal. But what if you have 1,000 images to work with? To do this by hand would take days, if you could even force yourself to do this repetitive task over and over. This is where these image conversion tools comes in.
 
 ## Installation Instructions
 To use this software, you first need download and extract the `ImageConversionTools_.jar_` or `ImageConversionTools_.zip_` file. There, you can run the conversion software you wish to use. Then, you can select your image(s) and click the `Open` button from the DirectoryResource popup. The software will automatically perform the task and save it to the same directory as the original image.

@@ -5,15 +5,17 @@ import java.util.*;
 public class GrayscaleToColor {
     public static ImageResource makeColor(ImageResource grayImage, int algorithm) {
         ImageResource colorImage = new ImageResource(grayImage);
-        for (Pixel p : colorImage.pixels()) {
-            Pixel corrPixel = grayImage.getPixel(p.getX(), p.getY());
-            int red = corrPixel.getRed();
-            int green = corrPixel.getGreen();
-            int blue = corrPixel.getBlue();
-            int avg = (red + green + blue) * 3;
-            p.setRed(avg);
-            p.setGreen(avg);
-            p.setBlue(avg);
+        if (algorithm == 1) {
+            for (Pixel p : colorImage.pixels()) {
+                Pixel corrPixel = grayImage.getPixel(p.getX(), p.getY());
+                int red = corrPixel.getRed();
+                int green = corrPixel.getGreen();
+                int blue = corrPixel.getBlue();
+                int avg = (red + green + blue) * 3;
+                p.setRed(avg);
+                p.setGreen(avg);
+                p.setBlue(avg);
+            }
         }
         // ITU-R BT.709 Formula
         if (algorithm == 2) {
@@ -35,10 +37,10 @@ public class GrayscaleToColor {
                 int red = corrPixel.getRed();
                 int green = corrPixel.getGreen();
                 int blue = corrPixel.getBlue();
-                int avg = (int) Math.round((red / 0.299) + (green / 0.587) + (blue / 0.114));
-                p.setRed(avg);
-                p.setGreen(avg);
-                p.setBlue(avg);
+                
+                p.setRed((int) Math.round(red / 0.299));
+                p.setGreen((int) Math.round(green / 0.587));
+                p.setBlue((int) Math.round(blue / 0.114));
             }
         }
         return colorImage;
