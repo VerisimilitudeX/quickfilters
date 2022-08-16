@@ -23,7 +23,7 @@ You might want to experiment with printing images in grayscale. Grayscale printi
 
 </details>
 
-## Color to Colored Inversion (Image Negative) Converter
+## Color to Photographic Negative (Inversion) Converter
 Simply select your images, and they will be batch converted to colored inversion instantly, with no loss of image resolution. This is useful for creating negative images or for creating images with a fun aesthetic.
 
 ![Color to Inverted Conversion](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)
@@ -41,7 +41,7 @@ Simply inverting colors retains the relative contrast between UI components (no 
 
 </details>
 
-## Colored Inversion to Color Converter
+## Photographic Negative to Color Converter
 Simply select your images, and they will be batch converted to colored inversion instantly, with no loss of image resolution.
 
 ![Inverted to Color Conversion](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)

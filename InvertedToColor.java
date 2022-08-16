@@ -28,6 +28,6 @@ public class InvertedToColor {
         for (int i = 0; i < 100; i++){
             System.out.println("");
         }
-        System.out.println("CONVERSION COMPLETE: The inverted images (negatives) are saved in the same directory as the original images, with a -colored suffix.");
+        System.out.println("CONVERSION COMPLETE: The colored images are saved in the same directory as the original images, with a -colored suffix.");
     }
 }
