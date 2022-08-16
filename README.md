@@ -10,10 +10,7 @@ Simply select your images, and they will be batch converted to grayscale instant
 
   <summary>More Info</summary>
 
-### Usage 
-This software turns color photos into grayscale ones. Only gray color information is left in the output image after it removes all color channel information. You only see a black and white image as a result. There are several methods for removing color from an image, so you can select the conversion algorithm or enter your own constant weights to specify how much grayscale to extract from each color channel.
-
-### Algorithms Currently Supported
+### Supported Algorithms
 The following algorithms are currently supported:
 - Mean Color Value
 - ITU-R BT.709
@@ -25,6 +22,29 @@ The following algorithms are currently supported:
 You might want to experiment with printing images in grayscale. Grayscale printing is significantly less expensive than color printing. Furthermore, some publications mandate that all images be converted to grayscale. Or perhaps you intend to perform complex image processing. Working with grayscale images could simplify or even speed up that processing.
 
 </details>
+
+## Color to Colored Inversion (Image Negative) Converter
+Simply select your images, and they will be batch converted to colored inversion instantly, with no loss of image resolution. This is useful for creating negative images or for creating images with a fun aesthetic.
+
+![Color to Inverted Conversion](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)
+
+<details>
+
+  <summary>More Info</summary>
+
+### Benefits of Colored Inversion
+True color blindness, in which a person cannot discriminate between colors, is exceedingly rare. Red-green weakness is a significantly more frequent illness that affects up to 10% of the male population. People who suffer from it have difficulty distinguishing between red and green, and some colors may appear exactly similar to them.
+
+While it has not been scientifically proven yet (there are varying types and grades of red-green weakness), there is a fair probability that when the colors are inverted, UI components that a red-green weak individual cannot see well will become more distinct.
+
+Simply inverting colors retains the relative contrast between UI components (no black text on grey backgrounds), making it a "safe" effect at the very least.
+
+</details>
+
+## Colored Inversion to Color Converter
+Simply select your images, and they will be batch converted to colored inversion instantly, with no loss of image resolution.
+
+![Inverted to Color Conversion](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)
 
 ## Grayscale to Color Converter
 This converter uses the luminosity approach to convert a color image to a grayscale image.
@@ -38,7 +58,7 @@ This converter uses the luminosity approach to convert a color image to a graysc
 ### Usage 
 This software converts grayscale photos to color ones. The output image is a color image with the same resolution as the input image. The algorithm used is the luminosity approach. The luminosity is calculated by taking the average of the red, green, and blue color channels. The luminosity is then used to calculate the color of each pixel. The user can also choose to use a different algorithm to calculate the color of each pixel, which is included in the software.
 
-### Algorithms Currently Supported
+### Supported Algorithms
 The following reverse algorithms are currently supported:
 - Mean Color Value
 - ITU-R BT.709
