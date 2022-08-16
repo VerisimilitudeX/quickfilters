@@ -50,28 +50,13 @@ Color images enhance the contrast of the image. They also allow for even more co
 
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Unique Features
+## Unique Features
 If you only need to convert one image, using an image editing application that you are already familiar with may be the simplest option. You'd open the image to be converted and then use the application to create a copy of it. But what if you need to convert a large number of images? Opening each image, converting it, and then saving it can be highly time-consuming and tedious. For a few images, this may not be a big deal. But what if you have 1,000 images to work with? To do this by hand would take days, if you could even force yourself to do this repetitive task over and over. This is where these image conversion tools comes in.
 
-### Installation Instructions
+## Installation Instructions
 To use this software, you first need download and extract the `ImageConversionTools_.jar_` or `ImageConversionTools_.zip_` file. There, you can run the conversion software you wish to use. Then, you can select your image(s) and click the `Open` button from the DirectoryResource popup. The software will automatically perform the task and save it to the same directory as the original image.
 
-### How They Work
+## How They Work
 1. The user selects a group of images to convert.
 2. The conversion algorithm is implemented on each of the selected images.
 3. The software saves the results by add a suffix to the end of each image file name, indicating the conversion algorithm used.
