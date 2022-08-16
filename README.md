@@ -3,7 +3,7 @@
 ## Color to Grayscale Converter
 Simply select your images, and they will be batch converted to grayscale instantly, with no loss of image resolution.
 
-![Color to Grayscale Diagram](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)
+![Color to Grayscale Conversion](https://user-images.githubusercontent.com/96280466/184594032-e357db52-7237-467a-961d-8e7067d70d2e.png)
 
 <details>
 
@@ -28,7 +28,7 @@ You might want to experiment with printing images in grayscale. Grayscale printi
 ## Grayscale to Color Converter
 This converter uses the luminosity approach to convert a color image to a grayscale image.
 
-![Grayscale to Color Diagram](https://user-images.githubusercontent.com/96280466/184594033-e357db52-7237-467a-961d-8e7067d70d2e.png)
+![Grayscale to Color Conversion](https://user-images.githubusercontent.com/96280466/184758840-1ed22d5b-e270-489d-9777-84f1e8ed9098.png)
 
 <details>
 
