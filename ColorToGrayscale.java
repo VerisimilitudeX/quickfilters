@@ -1,6 +1,9 @@
+import resources.DirectoryResource;
+import resources.ImageResource;
+import resources.Pixel;
+
 import java.io.*;
 import java.util.*;
-import resources.*;
 
 public class ColorToGrayscale {
 	public static ImageResource makeGray(ImageResource colorImage, int algorithm) {
