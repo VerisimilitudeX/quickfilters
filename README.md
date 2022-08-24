@@ -72,9 +72,9 @@ Simply select your images, and they will be batch converted to colored inversion
 ![Inverted to Color Conversion](https://user-images.githubusercontent.com/96280466/184777184-388b812b-bbd0-4071-9778-e287e7e250a4.png)
 
 ## Installation Instructions
-To use this software, you first need download and extract the `ImageConversionTools_.jar_` or `ImageConversionTools_.zip_` file. There, you can run the conversion software you wish to use. Then, you can select your image(s) and click the `Open` button from the DirectoryResource popup. The software will automatically perform the specified task and save it to the same directory as the original image along with a suffix of the type of conversion performed.
+To use this software, you first need download and extract the `ImageConversionTools.jar` or `ImageConversionTools.zip` file. After that, you can run the file of the conversion software you wish to use. Then, select your image(s) and click the `Open` button from the DirectoryResource popup. The software will automatically perform the specified task and save it to the same directory as the original image along with a suffix of the type of conversion performed.
 
-## How They Work
+## Algorithm Explanation
 1. The user selects a group of images to convert.
 2. The conversion algorithm is implemented on each of the selected images.
 3. The software saves the results by add a suffix to the end of each image file name, indicating the conversion algorithm used.
