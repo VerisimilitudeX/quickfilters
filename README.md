@@ -1,4 +1,4 @@
-# Batch Image Conversion Tools
+# QuickBatchFilter
 If you only need to convert one image, using an image editing application that you are already familiar with may be the simplest option. You'd open the image to be converted and then use the application to create a copy of it. But what if you need to convert a large number of images? Opening each image, converting it, and then saving it can be highly time-consuming and tedious. For a few images, this may not be a big deal. But what if you have 1,000 images to work with? To do this by hand would take days, if you could even force yourself to do this repetitive task over and over. This is where these image conversion tools comes in.
 
 ## Color to Grayscale Converter
